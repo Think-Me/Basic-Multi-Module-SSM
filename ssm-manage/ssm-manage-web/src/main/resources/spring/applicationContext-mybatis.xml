@@ -18,7 +18,7 @@ http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
 
     <!-- mapper 接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.youmeek.ssm.manage.mapper"/>
+        <property name="basePackage" value="com.lsz.ssm.manage.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 

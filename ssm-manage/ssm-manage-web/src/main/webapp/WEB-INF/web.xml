@@ -52,6 +52,7 @@
         <filter-name>DruidWebStatFilter</filter-name>
         <filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>
         <init-param>
+            <!-- 排除带有下面这些后缀的请求 -->
             <param-name>exclusions</param-name>
             <param-value>*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*</param-value>
         </init-param>
@@ -90,7 +91,7 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
-        <welcome-file>/index.jsp</welcome-file>
+        <welcome-file>/welcome.jsp</welcome-file>
     </welcome-file-list>
 
 

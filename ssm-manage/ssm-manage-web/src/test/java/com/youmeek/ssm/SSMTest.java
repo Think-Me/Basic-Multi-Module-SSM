@@ -1,7 +1,7 @@
 package com.youmeek.ssm;
 
-import com.youmeek.ssm.manage.pojo.SysUser;
-import com.youmeek.ssm.manage.service.SysUserService;
+import com.lsz.ssm.manage.pojo.SysUser;
+import com.lsz.ssm.manage.service.SysUserService;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;

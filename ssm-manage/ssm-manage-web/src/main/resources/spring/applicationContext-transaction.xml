@@ -18,9 +18,9 @@ http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
     <bean id="druid-stat-pointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut" scope="prototype">
         <property name="patterns">
             <list>
-                <value>com.youmeek.ssm.manage.service.*</value>
+                <value>com.lsz.ssm.manage.service.*</value>
                 <!--如果使用的是 hibernate 则这里也要扫描路径，但是 mybatis 不需要-->
-                <!--<value>com.youmeek.ssm.manage.dao.*</value>-->
+                <!--<value>com.lsz.ssm.manage.dao.*</value>-->
             </list>
         </property>
     </bean>
@@ -84,13 +84,13 @@ http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
     </tx:advice>
 
     <aop:config>
-        <!--把这个拦截器配置到com.youmeek.ssh.service下(包括子包)下的以impl目录下类的,任意方法-->
+        <!--把这个拦截器配置到com.lsz.ssh.service下(包括子包)下的以impl目录下类的,任意方法-->
         <!--
         execution的语法表示:在impl包中定义的任意方法的执行，更多方式可以参考：
         http://lavasoft.blog.51cto.com/62575/172292/
         http://blog.csdn.net/partner4java/article/details/7015946
         -->
-        <aop:pointcut id="transactionPointcut" expression="execution(* com.youmeek.ssm.manage.service.impl.*.*(..) )"/>
+        <aop:pointcut id="transactionPointcut" expression="execution(* com.lsz.ssm.manage.service.impl.*.*(..) )"/>
         <!--<aop:pointcut id="transactionPointcut" expression="execution(* *..*Service*.*(..))"/>-->
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice"/>
     </aop:config>

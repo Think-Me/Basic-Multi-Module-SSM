@@ -1,8 +1,8 @@
-package com.youmeek.ssm.manage.controller;
+package com.lsz.ssm.manage.controller;
 
 
-import com.youmeek.ssm.manage.pojo.SysUser;
-import com.youmeek.ssm.manage.service.SysUserService;
+import com.lsz.ssm.manage.pojo.SysUser;
+import com.lsz.ssm.manage.service.SysUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
